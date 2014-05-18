@@ -1,4 +1,4 @@
-This Meteor app uses these pacakges:
+This Meteor app uses these packages:
 
 [reactive-table](https://atmospherejs.com/package/reactive-table)
 
