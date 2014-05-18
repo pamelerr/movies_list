@@ -4,4 +4,4 @@ reactive-table
 facebook-sdk
 twit
 
-View Demo here: http://movies_list.meteor.com
+View <a href="http://movies_list.meteor.com">Demo</a>
