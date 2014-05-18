@@ -1,0 +1,149 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+		
+/*  #site specific styles 
+	=====================
+*/
+body {
+	font-family: 'Play', sans-serif;
+	color: #333;
+	letter-spacing: 1px;
+}
+a { color: #166da4; text-decoration: none; }
+h1, .h1 {
+	margin-bottom: .5em;
+	font-weight: 700;
+	font-size: 2em;
+	color: #535151;
+}
+header {
+	background: #f3f3f3;
+	margin: 0;
+	padding: 0;
+}
+#header h1{
+	margin: 0;
+	font-size: 13px;
+	color: #333;
+}
+/* form elements */
+#movieform {
+	padding: 10px 30px;
+	text-align: center;
+	
+}
+#myform {
+	width: 75%;
+	margin: 15px auto 0;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+input[type="text"], input[type="number"] {
+	padding: 5px;
+	font-size: 1em;
+}
+select {
+    padding:5px;
+    font-size: 1.25em;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow: -1px -1px 1px #888888 inset;
+    -moz-box-shadow: -1px -1px 1px #888888 inset;
+    box-shadow: -1px -1px 1px #888888 inset;
+    border:none;
+    outline:none;
+    display: inline-block;
+    color: #535151;
+    background: none;
+    /*-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;*/
+    cursor:pointer;
+}
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"] {
+	text-align: center;
+	padding: 6px 12px 8px;
+	border: 1px solid #2779ac;
+	background-color: #4aa5de;
+	box-shadow: 0 2px 1px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.4) inset;
+	color: #fff;
+	font-size: 1em;
+	border-radius: 3px;
+}
+#movieform label {
+	display: block;
+}
+/* table elements */
+#movies {
+	margin: 30px;
+}
+#movies table {
+	width: 100%;
+}
+#movies th {
+	font-weight: 700;
+	border-bottom: 2px solid #4aa5de;
+	padding: 5px;
+	color: #166da4;
+}
+#movies td  {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+}
+td.edit, td.delete, td.year, td.genre {
+	text-align: center;
+}
+#movies tr.selected, #movies tr:hover {
+	background: #d4f6b2;
+}
+#movies thead tr:hover {
+	background: none;
+}
+/* misc elements */
+.container {
+	padding: 15px;
+}
+.left {
+	display: inline-block;
+	margin-right: 5px;
+}
+.clear {
+	clear: both;
+}
+.center {
+	text-align: center;
+}
+.addtop {
+	padding-top: 15px;
+}
+/* Reactive table overrides */
+div.reactive-table-navigation {
+	margin: 1em 0 0;
+}
+
+

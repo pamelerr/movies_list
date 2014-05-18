@@ -1,0 +1,71 @@
+<head>
+  <title>My Movie Collection</title>
+  <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header role="banner">
+	 <div id="header" class="container">
+	 <h1>My Movie Collection</h1>
+	 </div>
+</header>
+<section role="main">
+	<div id="movieform">
+		{{> movieform}}
+	</div>
+	<div id="movies">
+		{{> movies_list}}
+	</div>
+</section>
+<footer>
+	<div class="center clear addtop">
+		{{> fbook}}
+	</div>
+</footer>
+</body>
+
+<template name="movieform">
+	<form id="myform">
+		<div class="center"><p class="h1">Add A Movie</p>
+			<div class="left">
+				<label for="title">Movie Title</label>
+				<input id="title" name="title" type="text" />
+			</div>
+			<div class="left">
+				<label for="year">Release Year</label>
+				<input id="year" name="year" type="number" />
+			</div>
+			<div class="left">
+				<label for="genre">Genre</label>
+				<select id="genre" name="genre">
+					<option>Action</option>
+					<option>Comedy</option>
+					<option>Drama</option>
+					<option>Foreign</option>
+					<option>Horror</option>
+					<option>Kids</option>
+					<option>Romance</option>	
+					<option>Sci-Fi</option>
+				</select>
+			</div>
+		</div>
+		<div class="clear addtop">
+		<a href="javascript:document.getElementById('myform').reset();">Clear</a>
+		<input id="Submit" type="submit" value="Add/Update Movie"/>
+		</div>
+	</form>
+</template>
+
+<template name="movies_list">
+  {{> reactiveTable collection=movies settings=settings}}
+</template>
+
+<template name="movies_info">
+<input class="delete" type="button" value="delete"/>
+</template>
+<template name="movies_edit">
+<input class="edit" type="button" value="edit"/>
+</template>
+<template name="fbook">
+	{{> facebookLike config}}
+</template>
