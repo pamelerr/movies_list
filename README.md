@@ -6,4 +6,4 @@ This Meteor app uses these pacakges:
 
 [twit](https://atmospherejs.com/package/twit)
 
-View [http://movies_list.meteor.com](Demo)
+View [Demo](http://movies_list.meteor.com)
